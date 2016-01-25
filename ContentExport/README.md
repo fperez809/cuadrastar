@@ -22,9 +22,12 @@ This tool does not require any special packages other than those available with 
 to remove the need from the user to install and configure dependencies
 
 Assumptions:
-	* The star tools (star, starclean) are usable directly from the command line (i.e. ~star/sys is included in the PATH env variable)
-	* /tmp is available in the system and has enough space to hold the full export.
-	* The source database does not require a password to access the search screen.
+
+	The star tools (star, starclean) are usable directly from the command line (i.e. ~star/sys is included in the PATH env variable)
+	
+	/tmp is available in the system and has enough space to hold the full export.
+	
+	The source database does not require a password to access the search screen.
 
 Limitations:
 	* The list of fields in the source database when concatenated cannot exceed 800 chars (STAR system limit)
