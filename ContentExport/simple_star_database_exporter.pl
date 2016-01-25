@@ -9,12 +9,12 @@
 #		Each key-value pair is structured according to the format [FIEDLDNAME]: [FIELDVALUE]
 #
 #		Sample
-#				#1 STAREXPORT
+#				####1 STAREXPORT
 #				AUTHOR: Perez, Francis
 #				TITLE: Sample Document exported.
 #				VOL: 25
 #				ISSUE: 2
-#				++
+#				++++
 #				
 #
 #		This tool uses the *ALL export report in conjunction with the DUMP2 page format to generate a key->value export out of STAR,
@@ -109,13 +109,13 @@ while($inline = <FH_IN>) {
         
 		#Flush an existing document buffer to disk.
         if($numrecs > 1) {
-            $rec_buffer .= "\n++"; 
+            $rec_buffer .= "\n++++"; 
             print FH_OUT "$rec_buffer\n\n";       	
         }
         
 		#Populating a new document buffer
         $rec_buffer = "";
-        $rec_buffer .= "#$numrecs STAREXPORT\n";
+        $rec_buffer .= "####$numrecs STAREXPORT\n";
         $rec_buffer .= "STARRN: $star_recnum\n";
         $rec_buffer .= "STARDB: $star_db\n";   
 
@@ -137,7 +137,7 @@ while($inline = <FH_IN>) {
 
 #if the buffer still contains a document, then flushing it to disk.
 if(length($rec_buffer) > 0) {
-    $rec_buffer .= "\n++"; 
+    $rec_buffer .= "\n++++"; 
     print FH_OUT "$rec_buffer\n\n";    
 }
 
