@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 #---------------------------------------------------------------------------------------------------------#
 #
-#   generic_star_db_exporter.pl
+#   simple_star_database_exporter.pl
 #
 #		This tool exports all content from a Cuadra STAR database and generates the export in a TaggedASCII format.
 #
