@@ -8,12 +8,12 @@ The documents are delimited by a header that starts with a # sign, and end in a 
 Each key-value pair is structured according to the format [FIEDLDNAME]: [FIELDVALUE]
 
 	Sample
-	#1 STAREXPORT
+	####1 STAREXPORT
 	AUTHOR: Perez, Francis
 	TITLE: Sample Document exported.
 	VOL: 25
 	ISSUE: 2
-	++
+	++++
 
 This tool uses the *ALL export report in conjunction with the DUMP2 page format to generate a key->value export out of STAR,
 and then it parses that output to generate a clean tagged ascii file.
