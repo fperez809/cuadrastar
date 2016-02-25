@@ -5,7 +5,7 @@
 #
 #		This tool exports all content from a Cuadra STAR database and generates the export in a TaggedASCII format.
 #
-#		The documents are delimited by a header that starts with a # sign, and end in a line that only contains '++'
+#		The documents are delimited by a header that starts with #### sign, and end in a line that only contains '++++'
 #		Each key-value pair is structured according to the format [FIEDLDNAME]: [FIELDVALUE]
 #
 #		Sample
